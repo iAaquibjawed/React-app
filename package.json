@@ -4,6 +4,8 @@
   "description": "this is namestey react by me",
   "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcle build index.html",
     "test": "jest"
   },
   "author": "aaquib",
