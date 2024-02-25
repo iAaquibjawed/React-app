@@ -35,9 +35,6 @@ const ResturantCard = () => {
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2ba0ecc76a854c73dfd67be6b86ed0aa"
             />
             <h3>Meghana Foods</h3>
-            <h4>biryani, North Indian, Asian</h4>
-            <h4>4.4 start</h4>
-            <h4>38 minutes</h4>
         </div>
     )
 }
@@ -48,6 +45,8 @@ const Body = () => {
         <div className="body">
             <div className="search">Search</div>
             <div className="res-container">
+                <ResturantCard />
+                <ResturantCard />
                 <ResturantCard />
                 <ResturantCard />
             </div>

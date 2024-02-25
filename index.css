@@ -2,8 +2,6 @@
 .header{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
   border-bottom: 1px solid #e0e0e0;
 
 }
@@ -25,15 +23,22 @@
   width: 100px;
 }
 
-.res-card{
-  
-  width: 200px;
-  height: 300px;
-  border: 1px solid #050505;
+.res-logo{
+  width: 100%;
 }
 
-.res-card > img{
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+.search{
+  padding: 10px;
 }
+
+.res-card{
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+}
+
+.res-card:hover{
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+}
+
