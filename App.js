@@ -2,15 +2,29 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="-container">
+                <img className="logo" src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148986823.jpg?size=338&ext=jpg&ga=GA1.1.1319243779.1708732800&semt=ais" alt="logo" />
+            </div>
 
-const parent = React.createElement(
-    "div", {id: "parent"}, "Hell world"
-);
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
 
-
+// const styleCard = {
+//     bodycolor: "#f0f0f0",
+// };
 
 const ResturantCard = () => {
     return (
@@ -18,7 +32,7 @@ const ResturantCard = () => {
             <img 
             className="res-logo"
             alt="res-logo"
-            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F008%2F687%2F818%2Fsmall%2Ffood-delivery-logo-free-vector.jpg&tbnid=OpTq5T86EOL-qM&vet=12ahUKEwiF2Zvq6sGEAxUISGwGHQPIBZgQMygCegQIARBw..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Ffood-delivery-logo&docid=MefSnqa_f0w7iM&w=200&h=200&q=food%20delivery%20app%20logo&ved=2ahUKEwiF2Zvq6sGEAxUISGwGHQPIBZgQMygCegQIARBw"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2ba0ecc76a854c73dfd67be6b86ed0aa"
             />
             <h3>Meghana Foods</h3>
             <h4>biryani, North Indian, Asian</h4>
@@ -29,6 +43,7 @@ const ResturantCard = () => {
 }
 
 const Body = () => {
+
     return (
         <div className="body">
             <div className="search">Search</div>
@@ -37,5 +52,40 @@ const Body = () => {
                 <ResturantCard />
             </div>
         </div>
-    )
-}
+    );
+};
+
+
+const AppLayout = () => {
+    return (
+        <div class="app">
+            <Header />
+            <Body />
+        </div>
+    );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
+// const parent = React.createElement(
+//     "div", {id: "parent"}, "Hell world"
+// );
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent);
+
+
+
+
+
+// const Body = () => {
+//     return (
+//         <div className="body">
+//             <div className="search">Search</div>
+//             <div className="res-container">
+//                 <ResturantCard />
+//                 <ResturantCard />
+//             </div>
+//         </div>
+//     )
+// }
